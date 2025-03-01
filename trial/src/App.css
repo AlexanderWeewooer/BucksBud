@@ -1,0 +1,75 @@
+.form-container {
+  background-image: url('/src/assets/wallpaper.png');
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 10rem; /* Adds space around the form */
+  padding-top: 15rem;
+  margin: 5rem;
+  width: 100rem;
+  height: 50rem;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Optional: Adds a shadow effect */
+}
+
+/* Ensure the form itself is centered within the container */
+.mycard {
+  width: auto;
+  height: auto;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  border-width: 0.1rem;
+  border-radius: 60px;
+  text-align: center;
+  margin-left: 40rem;
+  max-width: 100%; /* Ensures the form doesn't exceed container width */
+  box-shadow: 0rem 1rem 3rem rgba(206, 228, 202, 0.572);
+  background-color: rgb(255, 255, 255);
+}
+
+
+.formTitle {
+  font-size: 2rem;
+  padding-left: 1rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  max-height: 20rem;
+  padding-bottom:3rem;
+}
+
+.form-input{
+  margin: 0.3rem;
+  display: block; /* Make input a block element */
+  margin-left: auto; /* Center block element */
+  margin-right: auto; /* Center block element */
+  width: 100%;
+}
+
+.button{
+  background: rgb(28,184,183);
+  border: 1px solid rgba(128, 128, 128, 0.364);
+  width: 6rem;
+  height: 2rem;
+  border-radius: 10%;
+  margin-top: 1rem;
+  display: block; /* Make button a block element */
+  margin-left: auto; /* Center block element */
+  margin-right: auto; /* Center block element */
+  color:white;
+}
+
+/* Optional: Center table content */
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  text-align: center; /* Center text in table cells */
+}
+
