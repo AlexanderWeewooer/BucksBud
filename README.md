@@ -1,5 +1,5 @@
 # 🏦 BucksBud 💵
-Budgeting app created to mimic the functioning of YNAB but with some aspects I wanted to improve.
+Budgeting app created to mimic the functioning of YNAB but with some aspects I wanted to improve. With this project I'm trying to learn the React(JS) Framework.
 
 I feel like YNAB, the app I personally use, is way too expensive for such simple functions it provides.
 (This project runs on a free domain "[to update]". The account to access to see it is: [to update])
