@@ -3,7 +3,7 @@ export default function Register(){
     <div className="mycard">
         <form>
           <h2 className="formTitle">Register</h2>
-          <table>
+          <table className="customTable">
             <tbody>
               <tr>
                 <th><label>Username:</label></th><td><input className="form-input" type='text' name="username"></input></td>

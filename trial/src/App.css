@@ -1,75 +1,199 @@
+/*------------------------------------- DEFAULT STYLES --------------------------------------*/
 .form-container {
-  background-image: url('/src/assets/wallpaper.png');
-  background-size: cover; /* Ensures the image covers the container */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  padding: 10rem; /* Adds space around the form */
-  padding-top: 15rem;
-  margin: 5rem;
-  width: 100rem;
-  height: 50rem;
-  border-radius: 10px; /* Optional: Adds rounded corners */
-  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Optional: Adds a shadow effect */
+  background-image: url('/src/assets/mobile_wallpaper.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  margin: 2rem auto;
+  padding-top: 10rem;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
-/* Ensure the form itself is centered within the container */
 .mycard {
-  width: auto;
-  height: auto;
+  width: 90%;
+  height: 60%;
   padding: 2rem;
-  padding-bottom: 4rem;
   border-width: 0.1rem;
-  border-radius: 60px;
+  border-radius: 30px;
   text-align: center;
-  margin-left: 40rem;
-  max-width: 100%; /* Ensures the form doesn't exceed container width */
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0rem 1rem 3rem rgba(206, 228, 202, 0.572);
   background-color: rgb(255, 255, 255);
 }
 
-
-.formTitle {
-  font-size: 2rem;
-  padding-left: 1rem;
-  text-align: center;
-  font-weight: bolder;
-}
-
-.banner {
-  width: 100%;
-  height: auto;
-  max-height: 20rem;
-  padding-bottom:3rem;
-}
-
-.form-input{
-  margin: 0.3rem;
-  display: block; /* Make input a block element */
-  margin-left: auto; /* Center block element */
-  margin-right: auto; /* Center block element */
-  width: 100%;
-}
-
-.button{
+.button {
   background: rgb(28,184,183);
   border: 1px solid rgba(128, 128, 128, 0.364);
-  width: 6rem;
-  height: 2rem;
+  width: 8rem; /* Slightly smaller for mobile */
+  height: 3rem;
   border-radius: 10%;
   margin-top: 1rem;
-  display: block; /* Make button a block element */
-  margin-left: auto; /* Center block element */
-  margin-right: auto; /* Center block element */
-  color:white;
-}
-
-/* Optional: Center table content */
-table {
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  color: white;
+  font-weight: 600;
 }
 
-th, td {
-  text-align: center; /* Center text in table cells */
+.form-input {
+  margin: 0.2rem auto;
+  display: block;
+  width: 90%;
+  height: auto;
+  max-width: 15rem;
 }
+
+.customTable {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+.formTitle{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+/*------------------------------------- MEDIA QUERY --------------------------------------*/
+
+/*------------------------------------- MOBILE + --------------------------------------*/
+@media(min-width: 640px){
+  
+  .form-container {
+    background-image: url('/src/assets/mobile_wallpaper.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10rem;
+    width: 90%;
+    max-width: 40rem;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  .mycard {
+    width: 90%;
+    height: auto;
+    padding: 2rem;
+    border-width: 0.1rem;
+    border-radius: 30px;
+    text-align: center;
+    margin: 2rem auto;
+    box-shadow: 0rem 1rem 3rem rgba(206, 228, 202, 0.572);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .button {
+    background: rgb(28,184,183);
+    border: 1px solid rgba(128, 128, 128, 0.364);
+    width: 8rem;
+    height: 3rem;
+    border-radius: 10%;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+  
+  .form-input {
+    margin: 0.2rem auto;
+    display: block;
+    width: 90%;
+    max-width: 15rem;
+  }
+  
+  .customTable {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+  
+  .formTitle{
+    font-size: 40px;
+    font-weight: 500;
+  }
+  
+}
+
+/*------------------------------------- DESKTOP --------------------------------------*/
+@media(min-width: 960px){
+  
+  .form-container{
+    background-image: url('/src/assets/wallpaper.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30rem;
+    padding-top: 10rem;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 2.5%;
+    width: 200rem;
+    height: 45rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .mycard{
+    width: 30rem;
+    height: auto;
+    padding: 1rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    border-width: 0.1rem;
+    border-radius: 60px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 25rem;
+    margin-bottom:40rem;
+    box-shadow: 0rem 1rem 3rem rgba(206, 228, 202, 0.572);
+    background-color: rgb(255, 255, 255);
+  }
+
+  .button{
+    background: rgb(28,184,183);
+    border: 1px solid rgba(128, 128, 128, 0.364);
+    width: 10rem;
+    height: 4rem;
+    border-radius: 10%;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+  }
+
+  .form-input{
+    margin: 0.3rem;
+    display: block;
+    margin-left: 2rem;
+    margin-right: auto;
+    width: 15rem;
+  }
+
+  .customTable {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 10rem;
+  }
+
+  .formTitle{
+    font-size: 40px;
+    font-weight: 500;
+  }
+  
+}
+
 
